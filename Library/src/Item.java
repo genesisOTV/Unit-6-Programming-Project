@@ -33,9 +33,23 @@ public class Item implements Borrowable{
 		else { System.out.println("Item is not available"); }
 	}
 	
+	@Override
 	public void checkIn()
 	{
 		this.setStatus(Status.Available);
-		System.out.println("Thank you for returning the item");
+		System.out.println("Thank you for returning the item!");
+	}
+	
+	@Override
+	public void checkAvailability()
+	{
+		if(this.getStatus() == Status.Available)
+		{
+			System.out.println("Item is available");
+		}
+		else if(this.getStatus() == Status.CheckedOut)
+		{
+			System.out.println("Item is checked out");
+		}
 	}
 }

@@ -5,6 +5,4 @@ public class PaperMedia extends Item{
 	{
 		super(ID, title);
 	}
-	
-	
 }
