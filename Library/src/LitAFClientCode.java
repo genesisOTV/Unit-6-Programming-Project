@@ -18,5 +18,17 @@ public class LitAFClientCode {
 		System.out.println("");
 		Video TheImitationGame = new Video("1882", "The Imitation Game", 114);
 		TheImitationGame.checkOut();
+		
+		System.out.println("");
+		Magazine TimeMagazine = new Magazine("6675", "Time Magazine", 2018, 3, 26);
+		TimeMagazine.checkOut();
+		
+		System.out.println("");
+		JournalArticle esoteric = new JournalArticle("5235", "United States health care reform: progress to date and next steps", "Medicine");
+		esoteric.checkOut();
+		
+		System.out.println("");
+		VideoGame vidya = new VideoGame("4325", "Grand Theft Auto V", "Rated M");
+		vidya.checkOut();
 	}
 }

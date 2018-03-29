@@ -16,12 +16,12 @@ public class Video extends DigitalMedia{
 		
 		if(runtimeInMinutes >= 90)
 		{
-			category = "Movie";
+			category = "Movie : " + runtimeInMinutes;
 			return category;
 		}
 		else if(runtimeInMinutes < 90 && runtimeInMinutes >= 30)
 		{
-			category = "Short Film";
+			category = "Short Film : " + runtimeInMinutes;
 			return category;
 		}
 		
