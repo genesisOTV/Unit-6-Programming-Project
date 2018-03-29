@@ -11,7 +11,6 @@ public class Book extends PaperMedia{
 	public void checkOut()
 	{
 		Status status = this.getStatus();
-		System.out.println(status);
 		if(status == Status.Available)
 		{
 			this.setStatus(Status.CheckedOut);
@@ -26,5 +25,18 @@ public class Book extends PaperMedia{
 	{
 		this.setStatus(Status.Available);
 		System.out.println("Thank you for returning the book!");
+	}
+	
+	@Override
+	public void checkAvailability()
+	{
+		if(this.getStatus() == Status.Available)
+		{
+			System.out.println("Book is available");
+		}
+		else if(this.getStatus() == Status.CheckedOut)
+		{
+			System.out.println("Book is checked out");
+		}
 	}
 }

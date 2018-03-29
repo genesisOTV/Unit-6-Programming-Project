@@ -15,6 +15,7 @@ public class Item implements Borrowable{
 	public String getTitle() { return title; }
 	public Status getStatus() { return status; }
 	public int getPeriod() { return period; }
+	
 	public void setID(String ID) { this.ID = ID;}
 	public void setTitle(String title) { this.title = title; }
 	public void setStatus(Status status) { this.status = status; }
